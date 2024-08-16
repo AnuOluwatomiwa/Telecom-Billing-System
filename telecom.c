@@ -78,3 +78,15 @@ void viewPayment(char phoneNumber[])
     }
     printf("\nRecord not found!\n");
 )
+
+void searchRecord(char phoneNumber[])
+(
+    for (int i = 0; i < customerCount; i++) {
+        if (strcmp(customers[i].phoneNumber, phoneNumber)
+            == 0) {
+            printf("%s\t%s\t%.2f\t%.2f\n", customers[i].name, customers[i].phoneNumber, customers[i].usage, customers[i].totalBill);
+            return;
+        }
+    }
+    printf("\nRecord not found!\n");
+)
