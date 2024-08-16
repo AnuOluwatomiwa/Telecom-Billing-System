@@ -104,3 +104,15 @@ void deleteRecord(char phoneNumber[])
     }
     printf("\nRecord not found!\n");
 )
+
+// Function to display menu options
+void displayMenu()
+{
+    printf("\n1. Add New Record\n");    
+    printf("2. View List of Records\n");    
+    printf("3. Modify Record\n");
+    printf("4. View Payment\n");
+    printf("5. Delete Record\n");
+    printf("6. Exit\n");    
+
+}
